@@ -20,7 +20,7 @@ public class Simple{
         int a= input.nextInt();
         int b=input.nextInt();
         return a+b;
-        // System.out.print(a+b); after the return statement any statements gone execute 
+        // System.out.print(a+b); after the return statement any statements wont be execute 
     }
     static void greetings(){
         System.out.println("Hello My name is Sathwik"); // Compuslory the return statement mentioned 

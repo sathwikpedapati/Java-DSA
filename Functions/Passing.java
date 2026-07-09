@@ -1,6 +1,6 @@
 public class Passing {
     // Primitive DataTypes --> use pass by value
-    // object or other stuff ---> use pass by value of the reference
+    // object or other stuff ---> use pass by value of the references
     public static void main(String[] args) {
         // Java Follows the Pass by Value
         String name="Sathwik"; // name is pointing towards the Sathwik(Object)

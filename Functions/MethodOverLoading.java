@@ -8,7 +8,9 @@ public class MethodOverLoading {
         System.out.println(result(90, 67));
         System.out.println(result(67,89,90));
         // Different types of parameters
-        System.out.println(result(90, 78));
+        // Let If method is overloaded when return type and parameters list also changed
+        System.out.println(result(90.9, 78.7));
+        System.out.println(result(9, 76.9,78.9));
         // Order of Parameters
         // Method names is same but order of parameters is different
         form(90,"sathwik");
@@ -20,6 +22,10 @@ public class MethodOverLoading {
     static int result(int a,int b,int c){
         return a+b+c;
     }
+    static int result(int i,double j,double k){
+        return(int) (i+j+k);
+    }  // shows the error because dupliate method with different return type but same paramters
+    // you cannot overload the method
     static double result(double a,double b){
         return a+b;
     }
@@ -29,4 +35,5 @@ public class MethodOverLoading {
     static void form(String naam, int roll){
         System.out.println("My naam is"+" "+naam +" "+"Id is "+roll);
     }
+   
 }
