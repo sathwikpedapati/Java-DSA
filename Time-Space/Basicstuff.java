@@ -18,6 +18,7 @@ public static void main(String[] args) {
     target=3;
     Average(arr, target);
     Example(7);
+    logarthim(8);
     // Space Complexity - Input space + Auxiliary Space
     int n =9; // Constant then -- O(1)
     int[]ne = new int [n]; // New Space so that --- O(N)
@@ -79,5 +80,19 @@ static void Example(int n){
         }
     }
     System.out.println(count);
+}
+static void logarthim(int n){
+    // If Loop is multiplied and divide with something then it goes to O(logn)
+    // n -- n/2 -- n/4 -- n/8 -- n/16 -- 1
+    // n/2**k =1
+    // Apply log on both sides
+    // k =log2(n)
+    // Time Complexity is O(logn)
+    // + or - by a constant → O(n)
+    // * or / by a constant (> 1) → O(log n)
+    while(n>1){
+        n/=2;
+    }
+    System.out.println(n);
 }
 }
