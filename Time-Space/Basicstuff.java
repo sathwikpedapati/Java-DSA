@@ -80,6 +80,13 @@ static void Example(int n){
         }
     }
     System.out.println(count);
+    // Seperate loops so that O(n+n) =o(n)
+    for(int i=0;i<n;i++){
+        System.out.println(i);
+    }
+    for(int j=0;j<n;j++){
+        System.out.println(j);
+    }
 }
 static void logarthim(int n){
     // If Loop is multiplied and divide with something then it goes to O(logn)
