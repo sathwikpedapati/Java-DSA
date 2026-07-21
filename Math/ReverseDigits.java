@@ -6,6 +6,10 @@ public class ReverseDigits {
         int n= sc.nextInt();
         System.out.println(method(n));
     }
+    // O(log10N)
+    // n-n/10-n/100-....-1
+    // n/10**k=1
+    // k=log10(n)
     static int method(int num){
         int r=0;
         while(num>0){

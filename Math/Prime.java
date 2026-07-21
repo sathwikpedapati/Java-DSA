@@ -7,6 +7,7 @@ public class Prime{
         Normal(n);
         sqrt(n);
     }
+    // Time Complexity is O(n)
     static void Normal(int num){
         if(num<=1){
             System.out.println("Either prime or composite");
@@ -25,6 +26,7 @@ public class Prime{
             }
         }
 }
+// Time Complexity is O(Sqrt(n))
 static void sqrt(int num){
         if(num<=1){
             System.out.println("Either prime or composite");

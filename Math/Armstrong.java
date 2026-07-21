@@ -17,6 +17,10 @@ public class Armstrong {
            t1/=10;
         }
         // Summation
+        // O(log10N)
+        // n-n/10-n/100-....-1
+        // n/10**k=1
+        // k=log10(n)
         while(t2>0){
             int last=t2%10;
             res=res+(int)(Math.pow(last, c));
