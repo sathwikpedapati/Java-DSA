@@ -2,6 +2,7 @@ package Arrays.Basics;
 
 import java.util.Arrays;
 
+// for calculating the second max or second min then Every element != max or min and Every Element compare with secondmax or secondmin(nums[i]>secondmax or nums[i]<secondmin)
 public class Problem {
     public static void main(String[] args) {
         int [] a={5,4,3,2,1,0};
@@ -94,12 +95,12 @@ public class Problem {
             max=Math.max(nums[i],max);
         }
         for(int i=0;i<nums.length;i++){
-            if(nums[i]!=max && secondmax<max){
-                secondmax=Math.max(secondmax, nums[i]);
+            if(nums[i]!=max && secondmax<nums[i]){
+                secondmax=nums[i];
             }
         }
-        System.out.println(max);
-        System.out.println(secondmax);
+        System.out.println("max "+max);
+        System.out.println("second max "+secondmax);
     }
     static void secondsmallest(int []nums){
         int min=Integer.MAX_VALUE;
@@ -108,11 +109,11 @@ public class Problem {
             min=Math.min(nums[i], min);
         }
         for(int i=0;i<nums.length;i++){
-            if(nums[i]!=min && min<secondmin){
-                secondmin=Math.min(nums[i],secondmin);
+            if(nums[i]!=min && nums[i]<secondmin){
+                secondmin=nums[i];
             }
         }
-        System.out.println(min);
-        System.out.println(secondmin);
+        System.out.println("min "+ min);
+        System.out.println("second min " +secondmin);
     }
 }
