@@ -6,8 +6,10 @@ public class GCD {
         int a=sc.nextInt();
         int b=sc.nextInt();
         System.out.println("GCD"+" "+HCF(a, b));
+        System.out.println("GCD"+" "+GCD(a, b));    
     }
-    static int HCF(int m,int n){
+    // O(min(a,b))
+     static int HCF(int m,int n){
         int k=Math.min(m, n);
         int gcd=1;
         for (int i=2;i<=k;i++){
@@ -16,5 +18,18 @@ public class GCD {
             }
         }
         return gcd;
+    }
+    // O()
+    static int GCD(int m,int n){
+        while(m>0 && n>0){
+            if(m>n){
+                m=m%n;
+            }else{
+                n=n%m;
+            }
+            
+        }
+        if(m==0) return n;
+        else return m;
     }
 }
