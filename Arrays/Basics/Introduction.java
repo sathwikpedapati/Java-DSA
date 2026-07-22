@@ -1,6 +1,6 @@
 package Arrays.Basics;
 
-public class Intro {
+public class Introduction {
     public static void main(String[] args) {
        // Normal Method
        int [] arr={1,2,3,4,5};
