@@ -6,7 +6,8 @@ public class GCD {
         int a=sc.nextInt();
         int b=sc.nextInt();
         System.out.println("GCD"+" "+HCF(a, b));
-        System.out.println("GCD"+" "+GCD(a, b));    
+        System.out.println("GCD"+" "+gcd(a, b));   
+        System.out.println("GCD"+" "+other(a, b)); 
     }
     // O(min(a,b))
      static int HCF(int m,int n){
@@ -19,17 +20,26 @@ public class GCD {
         }
         return gcd;
     }
-    // O()
-    static int GCD(int m,int n){
+    // decreasing the number so that used log
+    // Modulo Operation then O(log(min(a,b)))
+     static int gcd(int m,int n){
         while(m>0 && n>0){
-            if(m>n){
-                m=m%n;
-            }else{
-                n=n%m;
-            }
-            
+            if(m>n) m%=n;
+            else n%=m;
         }
         if(m==0) return n;
-        else return m;
+        return m;
+     }
+    // Subraction GCD comparing higher number then subracting so that O(max(a,b))
+    static int other(int a,int b){
+      while(a>0 && b>0){
+        if(a>b){
+            a=a-b;
+        }else{
+            b=b-a;
+        }
+      }
+      if(a==0) return b;
+      return a;
     }
 }
