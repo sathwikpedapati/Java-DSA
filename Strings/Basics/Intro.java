@@ -12,6 +12,7 @@ public class Intro{
       // Adding Extra Space
       compare(str, str+" ");
       removespaces(l);
+      iterate("90000");
 
     }
     static void len(String s){
@@ -33,5 +34,11 @@ public class Intro{
     static void removespaces(String k){
         // Removing white spaces at beginning and ending
         System.out.println(k.trim());
+    }
+    static void iterate(String l){
+        // suppose when string is number then print as it is so that we use char-'0'
+        for(int i=0;i<l.length();i++){
+            System.out.println(l.charAt(i)-'0');
+        }
     }
 }
