@@ -45,6 +45,28 @@ public class HM{
         // Clear data in the Hashmap
         map.clear();
         System.out.println(map);
-
+        int [] p={1,2,3,4,1,2,3,4,5,6};
+        method(p,p);
+    }
+    static void method(int [] a,int []b){
+        HashMap <Integer,Integer> map= new HashMap<>();
+         HashMap <Integer,Integer> mab= new HashMap<>();
+        for(int i=0;i<a.length;i++){
+            if(map.containsKey(a[i])){
+                map.put(a[i], map.get(a[i])+1);
+            }else{
+                map.put(a[i], 1);
+            }
+        }
+        for(int i=0;i<b.length;i++){
+            if(mab.containsKey(b[i])){
+                mab.put(b[i], mab.get(b[i])+1);
+            }else{
+                mab.put(b[i], 1);
+            }
+        }
+        System.out.println(map==mab);
+        System.out.println(map);
+        System.out.println(map.get(1));
     }
 }
