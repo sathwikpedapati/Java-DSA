@@ -65,8 +65,12 @@ public class HM{
                 mab.put(b[i], 1);
             }
         }
+        // Compare the Reference 
         System.out.println(map==mab);
+        // Compare the values
+        System.out.println(map.equals(mab));
         System.out.println(map);
         System.out.println(map.get(1));
     }
+    
 }
