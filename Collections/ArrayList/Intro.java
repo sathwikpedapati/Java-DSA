@@ -1,6 +1,7 @@
 package Collections.ArrayList;
 
 import java.util.ArrayList;
+import java.util.*;
 
 public class Intro{
     public static void main(String args[]){
@@ -37,6 +38,7 @@ public class Intro{
         System.out.println(a);
         // convert them into string
         System.out.println(a.toString());
-
+        a.sort(null);
+        System.out.print(a);
     }
 }
