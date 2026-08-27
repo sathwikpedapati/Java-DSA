@@ -8,10 +8,10 @@ public class SelectionSort {
         sorting(nums); 
     }
     static void sorting(int [] n){
-        for(int i=0;i<n.length;i++){
+        for(int i=0;i<=n.length-2;i++){
             // suppose the min value is assigned at i position
             int m=i;
-            for(int j=i;j<n.length;j++){
+            for(int j=i+1;j<=n.length-1;j++){
                 // fetch the min value index
                 if(n[j]<n[m]) m=j;
             }
