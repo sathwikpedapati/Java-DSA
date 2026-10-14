@@ -74,6 +74,7 @@ public class OppositeDirection{
          if (i > j) {
              return true;
          }
+         //khhij
          StringBuilder p = new StringBuilder(str).deleteCharAt(i);
          StringBuilder q = new StringBuilder(str).deleteCharAt(j);
          int a = 0;
