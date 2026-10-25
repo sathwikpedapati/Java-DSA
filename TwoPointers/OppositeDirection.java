@@ -39,10 +39,23 @@ public class OppositeDirection{
          return true;
      }
      public static int [] twosum(int[]arr,int target){
-        // Array must be sorted
-        // if arr[s]+arr[e]==target then return indexes
-        // sum>target e--
-        // sum<targer s++
+         // Using the Hashmap to store the previous values
+         // Using O(n) Space for HasnhMap so that --> O(n)
+         // Single loop --> O(n)
+//         HashMap<Integer,Integer> a= new HashMap<>();
+//         for(int i=0;i<arr.length;i++){
+//             int res=target-arr[i];
+//             if(a.containsKey(res)){
+//                 return new int []{a.get(res),i};
+//             }
+//             a.put(arr[i],i);
+//         }
+//         return new int[]{-1,-1};
+//         Array must be sorted
+//         if arr[s]+arr[e]==target then return indexes
+//         sum>target e--
+//         sum<targer s++
+//           Time -O(n) Space -O(1)
         int s=0;
         int e=arr.length-1;
         while(s<=e){

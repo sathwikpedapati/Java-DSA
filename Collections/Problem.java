@@ -10,7 +10,7 @@ public class Problem{
        for(int i=0;i<nums.length;i++){
          int c=target-nums[i];
          if(a.containsKey(c)){
-            return  new int[]{i};
+            return  new int[]{i,a.get(c)};
          }
          a.put(nums[i],i);
        }

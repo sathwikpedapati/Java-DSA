@@ -7,20 +7,21 @@ public class Composite {
         method(n);
     }
     static void method(int num){
+        boolean iscomposite=false;
         if(num<=1){
             System.out.println("Either Composite or Prime");
         }else{
-            boolean iscomposite=true;
             for(int i=2;i<num;i++){
                 if(num%i==0){
-                    iscomposite=false;
-                    System.out.println(num+" is Composite Number");
+                    iscomposite=true;
                     break;
                 }
             }
-            if(iscomposite){
-                System.out.println(num+" is not Composite number");
-            }
+        }
+        if(iscomposite){
+            System.out.println(num+" is Composite number");
+        }else{
+            System.out.println(num+" is not Composite number");
         }
     }
 }

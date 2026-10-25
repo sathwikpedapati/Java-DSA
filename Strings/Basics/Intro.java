@@ -13,7 +13,8 @@ public class Intro{
       compare(str, str+" ");
       removespaces(l);
       iterate("90000");
-
+      removespaces("A man, a plan, a canal: Panama");
+      replaceAll("A man, a plan, a canal: Panama");
     }
     static void len(String s){
         System.out.println(s.length());
@@ -40,5 +41,9 @@ public class Intro{
         for(int i=0;i<l.length();i++){
             System.out.println(l.charAt(i)-'0');
         }
+    }
+    static  void replaceAll(String p){
+        p=p.replaceAll("[^A-Za-z0-9]","");
+        System.out.println(p);
     }
 }

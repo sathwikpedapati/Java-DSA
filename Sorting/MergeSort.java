@@ -47,6 +47,8 @@ public class MergeSort{
         a.add(arr[right]);
         right++;
     }
+       System.out.println(a);
+       System.out.println(low);
     // updating the elements in the Original Array
     for(int i=low;i<=high;i++){
          arr[i]=a.get(i-low);
