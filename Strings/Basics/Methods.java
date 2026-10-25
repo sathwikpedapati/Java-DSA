@@ -62,8 +62,8 @@ public class Methods {
         // replace number with another charcters or empty spaces
         System.out.println("a1189bb89pk".replaceAll("[0-9]",""));
         System.out.println("a66690umm90".replaceAll("[0-9]","l"));
-        // keep only digits remove the charcaters in it
-        System.out.println("a99090899pi".replaceAll("[^0-9]",""));
+        // keep only digits remove the special charcters from it mentioning only small and large and digits only
+        System.out.println("a99090899piAVYI%^&8".replaceAll("[^A-Za-z0-9]",""));
         // keep english letters and not special charcters
         // what you are keeping then mention ^
         System.out.println("a!!b@@c".replaceAll("[^A-Za-z]",""));
