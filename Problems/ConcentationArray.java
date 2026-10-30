@@ -3,6 +3,9 @@ import java.util.Arrays;
 public class ConcentationArray {
     public static  void main(String[] args){
         int [] nums={1,2,1};
+        // Result Array is  Two Times * size of the Original Array
+        // Res[i]=nums[i]
+        // Res[i+n]=nums[i]
         System.out.println(Arrays.toString(TraditionalApproach(nums)));
         System.out.println(Arrays.toString(ClassicalApproach(nums)));
     }
